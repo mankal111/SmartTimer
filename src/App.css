@@ -3,3 +3,5 @@
   background-color: #505D60;
   height: 100vh;
 }
+
+button:focus {outline:0;}
