@@ -1,0 +1,9 @@
+.timeText {
+    font-size:96px;
+    text-align: center;
+    color: white;
+    font-family: Rubik;
+    text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5),
+                -5px -5px 12px rgba(255, 255, 255, 0.5);
+    margin-bottom: 23px;
+}
