@@ -1,0 +1,36 @@
+.playToggleContainer {
+    position: relative;
+    background-color: #C4C4C4;
+    margin: auto;
+    margin-top: 150px;
+    width: 353px;
+    height: 354px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5),
+                -5px -5px 12px rgba(255, 255, 255, 0.5);
+    border: solid 1px white;
+    margin-bottom: 40px;
+}
+
+.playToggleButton {
+    position: absolute;
+    margin: auto;
+    width: 322px;
+    height: 323px;
+    border-radius: 50%;
+    top: 14px;
+    left: 14px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5),
+                -5px -5px 12px rgba(255, 255, 255, 0.5);
+    border: solid 1px white;
+    font-family: Rubik;
+    color: #5A5A5A;
+    font-size: 30px;
+    background-color: #C4C4C4;
+}
+
+.playToggleIcon {
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
