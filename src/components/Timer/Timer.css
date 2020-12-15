@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+    background-color: #C4C4C4;
+    width: 645px;
+    height: 94vh;
+    top: 3vh;
+    margin: auto;
+    border: solid 1px white;
+    border-radius: 13px;
+    box-shadow: 9px 12px 20px 1px rgba(0, 0, 0, 0.25),
+                -9px -12px 20px 1px rgba(255, 255, 255, 0.25);
+}
