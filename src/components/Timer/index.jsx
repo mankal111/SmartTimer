@@ -78,7 +78,6 @@ function Timer() {
             <PlayToggle icon={toggleIcon} onClick={toggleBtnCb} />
             <TimeDisplay timeText={timeText} />
             <div className="setTimeButtonsContainer">
-                {setTimeButton(.5)}
                 {setTimeButton(5)}
                 {setTimeButton(15)}
                 {setTimeButton(30)}
