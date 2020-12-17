@@ -32,6 +32,12 @@ function Timer() {
         setRemainingSeconds(initialSeconds);
         setFinished(false);
     }
+
+    const saySomething = message => {
+        var msg = new SpeechSynthesisUtterance();
+        msg.text = message;
+        window.speechSynthesis.speak(msg);
+    }
     
     const timeText = secondsToText(remainingSeconds);
     const [toggleIcon, toggleBtnCb] = running ?
@@ -47,6 +53,7 @@ function Timer() {
         if (remainingSeconds === 0) {
             stopTimer();
             setFinished(true);
+            saySomething('Time is up');
         }
     }, [remainingSeconds, timeText])
 
