@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SuperTimer/static/css/main.c46303aa.chunk.css",
+    "main.js": "/SuperTimer/static/js/main.863b982e.chunk.js",
+    "main.js.map": "/SuperTimer/static/js/main.863b982e.chunk.js.map",
+    "runtime-main.js": "/SuperTimer/static/js/runtime-main.b1f00652.js",
+    "runtime-main.js.map": "/SuperTimer/static/js/runtime-main.b1f00652.js.map",
+    "static/css/2.1ea46fc8.chunk.css": "/SuperTimer/static/css/2.1ea46fc8.chunk.css",
+    "static/js/2.fd65ea33.chunk.js": "/SuperTimer/static/js/2.fd65ea33.chunk.js",
+    "static/js/2.fd65ea33.chunk.js.map": "/SuperTimer/static/js/2.fd65ea33.chunk.js.map",
+    "static/js/3.9bc6f73a.chunk.js": "/SuperTimer/static/js/3.9bc6f73a.chunk.js",
+    "static/js/3.9bc6f73a.chunk.js.map": "/SuperTimer/static/js/3.9bc6f73a.chunk.js.map",
+    "index.html": "/SuperTimer/index.html",
+    "static/css/2.1ea46fc8.chunk.css.map": "/SuperTimer/static/css/2.1ea46fc8.chunk.css.map",
+    "static/css/main.c46303aa.chunk.css.map": "/SuperTimer/static/css/main.c46303aa.chunk.css.map",
+    "static/js/2.fd65ea33.chunk.js.LICENSE.txt": "/SuperTimer/static/js/2.fd65ea33.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/SuperTimer/static/media/rubik-latin-900italic.7f45ff04.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1f00652.js",
+    "static/css/2.1ea46fc8.chunk.css",
+    "static/js/2.fd65ea33.chunk.js",
+    "static/css/main.c46303aa.chunk.css",
+    "static/js/main.863b982e.chunk.js"
+  ]
+}
