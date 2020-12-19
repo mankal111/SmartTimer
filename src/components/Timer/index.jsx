@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import PlayToggle from '../PlayToggle';
 import TimeDisplay from '../TimeDisplay';
+import TimeInput from '../TimeInput';
 import './Timer.css';
 
 function Timer() {
-    const [remainingSeconds, setRemainingSeconds] = useState(3);
+    const [remainingSeconds, setRemainingSeconds] = useState(60);
     const [running, setRunning] = useState(false);
     const [finished, setFinished] = useState(false);
     const [intervalCb, setIntervalCb] = useState();
-    const [initialSeconds, setInitialSeconds] = useState(3);
+    const [initialSeconds, setInitialSeconds] = useState(60);
 
     const secondsToText = givenSeconds => {
         const minutes = Math.floor(givenSeconds / 60);
@@ -57,12 +58,16 @@ function Timer() {
         }
     }, [remainingSeconds, timeText])
 
+    const setTime = seconds => {
+        stopTimer();
+        setRemainingSeconds(seconds);
+        setInitialSeconds(seconds);
+        setFinished(false);
+    }
+
     const setTimeButton = minutes => {
         const clickHandler = () => {
-            stopTimer();
-            setRemainingSeconds(minutes * 60);
-            setInitialSeconds(minutes * 60);
-            setFinished(false);
+            setTime(minutes * 60);
         };
         return (
             <button
@@ -77,6 +82,7 @@ function Timer() {
         <div className="container">
             <PlayToggle icon={toggleIcon} onClick={toggleBtnCb} />
             <TimeDisplay timeText={timeText} />
+            <TimeInput initialSeconds={initialSeconds} setTime={setTime} />
             <div className="setTimeButtonsContainer">
                 {setTimeButton(5)}
                 {setTimeButton(15)}

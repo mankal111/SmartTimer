@@ -1,0 +1,46 @@
+input { outline: none; }
+
+.timeInputContainer {
+    display: block;
+    font-family: Rubik;
+    color: #5A5A5A;
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 34px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5),
+                -5px -5px 12px rgba(255, 255, 255, 0.5);
+    border: solid 1px white;
+    width: 250px;
+    padding: 10px;
+}
+
+.minutesField, .secondsField {
+    border: solid 1px white;
+    background-color: #b0b0b0;
+    font-family: Rubik;
+    color: #5A5A5A;
+    font-size: 30px;
+    width: 50px;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5),
+                inset -1px -1px 5px rgba(255, 255, 255, 0.5);
+}
+
+.fieldError {
+    background-color: #C49090;
+}
+
+.setCustomTimeButton{
+    border: solid 1px white;
+    background-color: #c0c0c0;
+    font-family: Rubik;
+    color: #5A5A5A;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 40px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5),
+                inset 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
