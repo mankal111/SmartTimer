@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import './TimeInput.css';
 
 function TimeInput({initialSeconds, setTime}) {
@@ -31,6 +32,7 @@ function TimeInput({initialSeconds, setTime}) {
         <div className="timeInputContainer">
             <input
                 type="number"
+                aria-label="minutes"
                 className={`minutesField ${minutesNegative ? 'fieldError' : ''}`}
                 value={minutes}
                 onChange={minutesChange}
@@ -38,14 +40,31 @@ function TimeInput({initialSeconds, setTime}) {
             m
             <input
                 type="number"
+                aria-label="seconds"
                 className={`secondsField ${secondsNegative || secondsOver59 ? 'fieldError' : ''}`}
                 value={seconds}
                 onChange={secondsChange}
             />
             s
-            <button onClick={clickHandler} className="setCustomTimeButton">Set</button>
+            <button
+                aria-label="set"
+                onClick={clickHandler}
+                className="setCustomTimeButton"
+            >
+                Set
+            </button>
         </div>
     )
+}
+
+TimeInput.defaultProps = {
+    initialSeconds: 0,
+    setTime: () => {},
+}
+
+TimeInput.propTypes = {
+    initialSeconds: PropTypes.number,
+    setTime: PropTypes.func,
 }
 
 export default TimeInput;
