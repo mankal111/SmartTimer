@@ -5,7 +5,7 @@ function Timer({timeText}) {
     
     return (
         <div className="timeDisplayContainer">
-            <div className="timeText">{ timeText }</div>
+            <div className="timeText" aria-label="remaining time">{ timeText }</div>
         </div>
     )
 }
