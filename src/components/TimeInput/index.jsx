@@ -59,12 +59,11 @@ function TimeInput({initialSeconds, setTime}) {
 
 TimeInput.defaultProps = {
     initialSeconds: 0,
-    setTime: () => {},
 }
 
 TimeInput.propTypes = {
     initialSeconds: PropTypes.number,
-    setTime: PropTypes.func,
+    setTime: PropTypes.func.isRequired,
 }
 
 export default TimeInput;
