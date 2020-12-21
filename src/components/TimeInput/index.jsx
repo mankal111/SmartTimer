@@ -29,7 +29,7 @@ function TimeInput({initialSeconds, setTime}) {
     }, [initialSeconds]);
 
     return (
-        <div className="timeInputContainer">
+        <div className="timeInputContainer" aria-label="set custom time">
             <input
                 type="number"
                 aria-label="minutes"
