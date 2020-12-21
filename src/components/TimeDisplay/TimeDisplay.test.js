@@ -5,5 +5,5 @@ test('renders remaining time', () => {
     const timeText="15:30";
     render(<TimeInput timeText={timeText} />);
     const timeDisplayContainer = screen.getByLabelText(/remaining time/i);
-    expect(timeDisplayContainer).toHaveValue(timeText);
+    expect(timeDisplayContainer).toHaveTextContent(timeText);
 });
